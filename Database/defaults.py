@@ -14,7 +14,7 @@ def add_default():
         if(not session.query(BankSchema).first()):
             defaults = []
             c = 0
-            with open("C:/Users/Ridhanya/Documents/Shamita/bank_branches.csv", mode ='r', encoding="utf8")as file:
+            with open("C:/Users/Ridhanya/Documents/Shamita/Backend/bank_branches.csv", mode ='r', encoding="utf8")as file:
                 csvFile = csv.reader(file)
                 for lines in csvFile:
                     if c > 0:

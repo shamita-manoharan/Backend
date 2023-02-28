@@ -6,10 +6,8 @@ Required Tables - Processor, Queues, DocumentType, Fields
 Mapped Tables   - MapQueuesProcessor, MapQueuesDocument
 """
 
-from sqlalchemy import Column, Integer, String, Sequence, ARRAY, DateTime, func, Boolean, UniqueConstraint
+from sqlalchemy import Column, Integer, String, Sequence
 from Database import Base
-from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
 
 # Schema for Processor Table
 class BankSchema(Base):

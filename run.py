@@ -32,6 +32,7 @@ CORS(app)
 @app.route('/')
 def index():
     return '<h1>Hello...</h1>'
+
 api.add_resource(SEARCH, '/api/search', endpoint='search')
 api.add_resource(BRANCH, '/api/branch', endpoint='branch')
 
